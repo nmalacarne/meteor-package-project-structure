@@ -13,7 +13,9 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
   api.use('ecmascript');
+  api.use('templating');
   api.addFiles('app-main.js');
+  api.addFiles('app-main.html');
 });
 
 Package.onTest(function(api) {
